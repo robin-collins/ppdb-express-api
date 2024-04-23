@@ -18,17 +18,35 @@ The application is built using Node.js and Express.js, leveraging PostgreSQL for
 
 ### Requirements
 
-- Node.js version 14+
+- Node.js version 16.x (as specified in package.json "engines")
 - PostgreSQL version 12+
 - Sequelize CLI
 
 ### Quickstart
 
 1. Clone the repository.
-2. Install dependencies: `npm install`
-3. Set up the PostgreSQL database and update the `.env` file with your database credentials.
-4. Run migrations: `npm run migrate`
-5. Start the server: `npm start`
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Create a `.env` file in the project root and add your configuration values:
+   ```sh
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_NAME=your_database
+   DB_USER=your_username 
+   DB_PASSWORD=your_password
+   ```
+   Adjust the configuration variables based on your environment.
+4. Set up the PostgreSQL database and update the `.env` file with your database credentials.
+5. Run database migrations:
+   ```sh
+   npm run db:migrate
+   ```
+6. Start the server:
+   ```sh
+   npm run start:dev
+   ```
 
 ### License
 
