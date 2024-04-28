@@ -7,9 +7,9 @@
 #### Features
 
 - **Core Features**:
-  1. User authentication and authorization using API keys.
-  2. CRUD operations for customers, animals, breeds, and notes.
-  3. Retrieving related data (e.g., all animals for a customer, all notes for an animal).
+  [x] 1. User authentication and authorization using API keys.
+  [x] 2. CRUD operations for customers, animals, breeds, and notes.
+  [x] 3. Retrieving related data (e.g., all animals for a customer, all notes for an animal).
   4. Search functionality across customer surnames, animal names, and phone numbers.
 - **Optional Features**:
   1. Pagination for list results.
